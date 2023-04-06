@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-color: rgb(178, 243, 243);
+}
+
+.menuBar {
+    background-color: #5599c7;
+    text-align: center;
+    
+}
+
+.menuBar ul li {
+    display: inline-block;
+    width: 120px;
+    margin: 0 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+}
+.menuBar ul li a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap
+}
+
+
+.active,
+.menuBar ul li:hover{
+    background-color: #73b5e0;
+}
+
+.subMenu {
+    position: absolute;
+    background-color: #5599c7;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.menuBar ul li:hover .subMenu {
+    display: block;
+}
+
+.menuBar ul li:hover .subMenu ul li {
+    display: block;
+    width: 140px;
+    border-bottom: 1px dotted white;
+    
+
+}
+
+.menuBar ul li:hover .subMenu ul li:last-child{
+    border: none;
+}
+
+.recomend p{
+    color:  #5599c7;
+    font-size: larger;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+@media screen and (max-width: 777px) {
+    .menuBar ul li {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .menuBar ul li {
+        width: 50px;
+    }
+
+    /* body {
+        overflow: hidden;
+    }
+    .menuBar ul{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5599c7;;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .menuBar ul li {
+        opacity: 0;
+    } */
+}
+
+
+
+.product-list a img{
+    width: 100%;
+}
+
+.product {
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+  }
+
+.product-list {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    /* margin-right: 40px; */
+}
+
+.product-list:nth-child(3n) {
+    margin-right: 0;
+  }
+.product .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
+
+.product-list a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap
+}
+
+
+.listText{
+    max-width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:  #5599c7;
+    font-size: larger;
+    padding-top: 10px;
+  }
+  .listText h2{
+    left: 0;
+  }
