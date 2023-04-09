@@ -1,0 +1,120 @@
+<html>
+<head>
+  <link:reset></link:reset>
+<style>
+.wrap {
+  margin: 2em 0;
+  padding: 0;
+}
+
+.wrap label {
+  display: block;
+  padding : 8px;
+  color: #fff;
+  font-weight: bold;
+  background: #999;
+  cursor: pointer;
+}
+
+.wrap input[type="checkbox"] {
+  display: none;
+}
+
+.wrap .content {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.switch:checked + .content {
+  height: auto;
+  padding: 8px;
+  background: #f7f7f7;
+}
+
+table {
+  width: 80%;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  text-align: right;
+  padding-right: 50px;
+}
+
+
+</style>
+</head>
+<body>
+  <main>
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      
+      <div class="wrap">
+        <!-- １つ目 -->
+        <label for="label1">
+          <div class="child-parent">
+          <table>
+            <tr>
+              <th>購入日</th>
+              <th>合計金額</th>
+            </tr>
+            <tr>
+              <td>2023年4月1日</td>
+              <td>10000円</td>
+            </tr>
+          </table>
+          </div>
+        </label>
+        <input type="checkbox" id="label1" class="switch" />
+        <!-- ↓↓最初隠したいコンテンツ↓↓ -->
+        <div class="content">
+          <p>
+            hogehoge
+          </p>
+        </div>
+        <!-- ↑↑最初隠したいコンテンツ ↑↑-->
+    
+        <!-- 2つ目 -->
+        <label for="label2">▼ クリックで展開2</label>
+        <input type="checkbox" id="label2" class="switch" />
+        <!-- ↓↓最初隠したいコンテンツ↓↓ -->
+        <div class="content">
+          <p>
+            hogehoge
+          </p>
+        </div>
+        <!-- ↑↑最初隠したいコンテンツ ↑↑-->
+    
+        <!-- 3つ目 -->
+        <label for="label3">▼ クリックで展開3</label>
+        <input type="checkbox" id="label3" class="switch" />
+        <!-- ↓↓最初隠したいコンテンツ↓↓ -->
+        <div class="content">
+          <p>
+            hogehoge
+          </p>
+        </div>
+        <!-- ↑↑最初隠したいコンテンツ ↑↑-->
+      </div>
+    
+    </body>
+    </html>
+    
+    
+  </main>
+
+
+</body>
+</html>
