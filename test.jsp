@@ -9,6 +9,10 @@
 <body>
 <div id="main">
 <%
+    //https://github.com/picketbox/picketbox/tree/master/security-spi/spi/src/main/java/org/jboss/security/vault
+    //https://github.com/picketbox/bare-vault/blob/master/src/main/java/org/picketbox/util/EncryptionUtil.java
+    //https://github.com/picketbox/bare-vault/blob/master/src/main/java/org/picketbox/plugins/vault/PicketBoxSecurityVault.java
+    //https://github.com/picketbox/bare-vault/blob/master/src/main/java/org/picketbox/plugins/vault/SecurityVaultData.java
     FileInputStream fis = null;
     ObjectInputStream ois = null;
     SecurityVaultData svd = null;
