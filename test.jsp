@@ -14,7 +14,7 @@
     SecurityVaultData svd = null;
     Map<String, byte[]> map = null;
    
-    fis = new FileInputStream("/Users/ryo/Applications/jboss-eap-7.4/vault/VAULT.dat");
+    fis = new FileInputStream("./vault/VAULT.dat");
     ois = new ObjectInputStream(fis);
     svd = (SecurityVaultData) ois.readObject();
     // map = (Map<String, byte[]>) ois.readObject();
@@ -41,7 +41,7 @@
     char[] keypass = "vault22".toCharArray();
 
     String keyStoreType = "JCEKS";
-    String keystoreURL = "/Users/ryo/Applications/jboss-eap-7.4/vault/vault.keystore";
+    String keystoreURL = "./vault/vault.keystore";
     KeyStore keystore = KeyStoreUtil.getKeyStore(keyStoreType, keystoreURL, keypass);
 
     Entry e = keystore.getEntry(alias, new KeyStore.PasswordProtection(keypass));
